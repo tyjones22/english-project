@@ -38,7 +38,23 @@ public static void main (String [] args)
         playerSex= sex[1];
         }
     
-    System.out.println(" You are a "+playerRace+" "+playerSex+". Enjoy.");
+    int playerAge= rand.nextInt(13)+13;
+    boolean young = false;
+    boolean old = false;
+  
+  
+    if ( playerAge < 18)
+    young = true;
+    
+    else
+    old = true;
+  
+  
+    System.out.println(" You are a "+playerAge+" "+playerRace+" "+playerSex+". Enjoy.");
+  
+    if (young){
+    System.out.println("You made a Youtube, Facebook, and Tiktok account.\nYou end up watching a few 
+               }
     
     
   }
