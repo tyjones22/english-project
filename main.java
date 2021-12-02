@@ -1,7 +1,7 @@
 import java.util.*;
 
-public class Main{
-
+public class AltRightMain{
+public static void main (String [] args)
   {
   
     Scanner k = new Scanner (System.in);
@@ -9,15 +9,16 @@ public class Main{
     System.out.println("Generating your stats");
     
     
-    String [] races = new String {"White","Black","Other"};
-    String [] sex = new String {"Male","Female"};
-    String [] races = new String {"White","Black","Other"};
+    String [] races = new String [] {"White","Black","Other Race"};
+    String [] sex = new String [] {"Male","Female"};
+   
     
     String playerRace= "";
+    String playerSex="";
     
       Random rand= new Random();
-      int whiteTest= rand.NextInt(4)+1;
-      int blackTest= rand.NextInt(3)+1;
+      int whiteTest= rand.nextInt(4)+1;
+      int blackTest= rand.nextInt(3)+1;
     
       if ( whiteTest < 4){
         playerRace = races[0];
@@ -28,7 +29,16 @@ public class Main{
       else
         playerRace= races[2];
     
-      int sexTest = rand.NextInt(4)
+      int sexTest = rand.nextInt(4);
+    
+      if ( sexTest < 4){
+        playerSex = sex[0];
+        }
+      else {
+        playerSex= sex[1];
+        }
+    
+    System.out.println(" You are a "+playerRace+" "+playerSex+". Enjoy.");
     
     
   }
