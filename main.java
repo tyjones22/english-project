@@ -33,6 +33,10 @@ public static void main (String [] args)
     
       if ( sexTest < 4){
         playerSex = sex[0];
+        
+        
+        
+        
         }
       else {
         playerSex= sex[1];
@@ -62,16 +66,16 @@ public static void main (String [] args)
     
     switch (playerAgeTest){
     
-    
+      case 1 : System.out.println("You made a Youtube, Facebook, and Tiktok account.\nYou end up watching a few games videos because they're popular "+
+                       "and all of your friends watch them.");
+        
     }
   
    
   
   
  
-    if (young){
-    System.out.println("You made a Youtube, Facebook, and Tiktok account.\nYou end up watching a few games videos because they're popular "+
-                       "and all of your friends watch them.");
+    
                }
     
     
